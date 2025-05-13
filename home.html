@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devanshi Rajyaguru</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    @keyframes logoSplash {
+      0% { opacity: 0; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.1); }
+    }
+
+    .logo-anim {
+      animation: logoSplash 2.5s ease forwards;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 6px;
+    }
+
+    #splash-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+    }
+
+    #main-content {
+      display: none;
+    }
+
+    body.loaded #main-content {
+      display: block;
+      animation: fadeIn 1s ease-out;
+    }
+
+    body.loaded #splash-screen {
+      display: none;
+    }
+
+    .hero-bg {
+      background: linear-gradient(to bottom, #000000, #1f2937);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+      animation: rotate 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .icon-circle {
+      border-radius: 50%;
+      padding: 1rem;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .testimonial-container {
+      overflow: hidden;
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .testimonial {
+      background-color: #2d3748;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      min-width: 300px;
+      margin-right: 20px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .testimonial .bold-text {
+      font-weight: bold;
+    }
+
+    .testimonial-text {
+      max-height: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .fade-in-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .testimonial {
+        min-width: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <h1 class="text-4xl md:text-6xl font-bold text-red-600 logo-anim">DEVANSHI RAJYAGURU</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <!-- Header -->
+    <header class="flex items-center justify-between px-6 py-4 bg-black">
+      <h1 class="text-3xl font-bold text-red-600" style="font-family: 'Bebas Neue', sans-serif;">DEVANSHI RAJYAGURU</h1>
+      <nav class="space-x-6">
+        <a href="#" class="hover:text-red-600">Home</a>
+        <a href="#work" class="hover:text-red-600">Work</a>
+        <a href="aboutme.html" class="hover:text-red-600">About Me</a>
+        <a href="aboutme.html#contact" class="hover:text-red-600">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-6 py-20 text-center hero-bg">
+      <div class="text-4xl md:text-5xl font-bold fade-in mb-2" style="font-family: 'Playfair Display', serif;">Welcome to my</div>
+      <div class="text-4xl md:text-5xl mb-6 fade-in" style="font-family: 'Playfair Display', serif;">Portfolio</div>
+      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 fade-in leading-relaxed whitespace-pre-line">
+        Oh hey! didn’t see you scrolling in:-)
+        I’m a social media strategist who’s turned brands into personalities and ideas into campaigns. This isn’t a pitch — it’s the proof.
+        From case studies to content experiments, it’s all here. Click around, my work’s doing the talking.
+      </p>
+    </section>
+
+    <!-- My Work Section -->
+    <section id="work" class="px-6 py-20">
+      <h2 class="text-3xl font-semibold text-center text-red-600 mb-12">My Work</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+        <a href="social-media-strategies.html" class="flex flex-col items-center hover:scale-110 transition-transform duration-300">
+          <div class="bg-white p-6 rounded-full shadow-md">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon" class="w-12 h-12" />
+          </div>
+          <p class="mt-4 text-lg font-semibold">Social Media Strategies</p>
+        </a>
+        <a href="video-editing.html" class="flex flex-col items-center hover:scale-110 transition-transform duration-300">
+          <div class="bg-white p-6 rounded-full shadow-md">
+            <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Video Editing Icon" class="w-12 h-12" />
+          </div>
+          <p class="mt-4 text-lg font-semibold">Video Editing</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="px-6 py-10" id="testimonials">
+      <a href="social-media-strategies.html#words-from-my-clients">
+        <h2 class="text-2xl font-semibold text-center mb-6 hover:text-red-600 transition-colors duration-300">
+          Testimonials
+        </h2>
+      </a>
+    </section>    
+      <div class="testimonial-container overflow-hidden">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial fade-in">
+            <p class="bold-text">Kalakriti Design | Nishi Mehta</p>
+            <div class="testimonial-text">
+              Working with you has truly been a game-changer for Kalakriti. Your creative energy, consistent effort, and attention to detail have brought a fresh life to our social media...
+            </div>
+          </div>
+          <div class="testimonial fade-in">
+            <p class="bold-text">Purvanshi Acharya</p>
+            <div class="testimonial-text">
+              First of all I would like to start by saying that I didn't expect I could ever get someone who would understand my social media needs which were so specific...
+            </div>
+          </div>
+          <div class="testimonial fade-in">
+            <p class="bold-text">Yogavritti | Shivani</p>
+            <div class="testimonial-text">
+              Yogavritti as a client I had a great experience. Purpose of creating insta page was to make more people aware especially ladies about yoga and it's importance...
+            </div>
+          </div>
+          <div class="testimonial fade-in">
+            <p class="bold-text">Anandi Kakkad</p>
+            <div class="testimonial-text">
+              When I started working with you to boost my Instagram and basically to show off my content and skills on Instagram, it was like you introduced me to a whole new world...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-6 mt-10 text-gray-500">
+      <div class="flex justify-center items-center gap-6">
+        <a href="mailto:devanshir23@gmail.com" class="flex items-center gap-2 hover:text-white">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="w-5 h-5" alt="Email" />
+          devanshir23@gmail.com
+        </a>
+<a href="tel:+918238892493" class="flex items-center gap-2 hover:text-white">
+  <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="w-6 h-6" alt="Phone Icon" />
+  +91 8238892493
+</a>
+
+      </div>
+      <p class="mt-4">&copy; 2025 Devanshi Rajyaguru. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript to handle splash screen timing -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+      }, 2500);
+    });
+  </script>
+
+</body>
+</html>

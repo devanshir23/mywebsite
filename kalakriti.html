@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalakriti | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .section.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section:nth-child(even) {
+      background-color: #141414;
+    }
+
+    .media-block {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .media-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .media {
+      width: 500px;
+      height: 300px;
+      background-color: #333;
+      border-radius: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .text-block {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .result-item {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .result-item:hover {
+      transform: scale(1.05);
+    }
+
+    .result-item h3 {
+      font-size: 2rem;
+      color: #00ffd1;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .media {
+        width: 100%;
+        height: 200px;
+      }
+
+      .media-block {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Introduction -->
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="D:/New website content/kalakriti.png" alt="Kalakriti Introduction Image" />
+      </div>
+      <div class="text-block">
+        <p><strong>Kalakriti Design</strong> is led by a talented graphic designer who specializes in wedding e-invites and stationeries—an incredibly popular and creative space in India. Along with that, she also handles corporate branding, including logos, packaging design, and much more. Her work speaks volumes in terms of aesthetic and professionalism. My goal was to present her exceptional designs in a content format that felt thoughtful, informative, and most importantly, appealing in its idea execution. Every post was planned not just to showcase the final output, but to tell the story behind the design, which made the audience value the work even more.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Challenges -->
+  <div class="section">
+    <h2>2. Challenges</h2>
+    <div class="media-block reverse">
+      <div class="media">
+        <img src="D:/New website content/KC.png" alt="Challenges Image" />
+      </div>
+      <div class="text-block">
+        <ul>
+          <li>One of the major challenges was the lack of consistency. Though work was being posted, it lacked structure and intention.</li>
+          <li>Content was being shared as just "work done" instead of story-driven posts that had hooks or insights into the design process.</li>
+          <li>Because of this, engagement was low, and there was a clear disconnect between the audience and the brand’s voice.</li>
+          <li>The need was to convert pure design output into compelling content that could resonate with both potential clients and creative enthusiasts.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engaging Reels -->
+  <div class="section">
+    <h2>3. Engaging Reels</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="D:/New website content/logopost.png" alt="Engaging Reels Image" />
+      </div>
+      <div class="text-block">
+        <ul>
+          <li>Transformed static design work (like logos) into interactive, story-driven reels.</li>
+          <li>Built a sense of curiosity by setting up a scenario or problem before revealing the final design solution.</li>
+          <li>For example, showcased a client brief first, followed by the visual process and then the final logo with its brand elements.</li>
+          <li>Repurposed long wedding e-invitation videos by starting with a strong, relatable hook and then presenting the final product, keeping it concise and scroll-stopping.</li>
+          <li>This format helped connect the audience emotionally and made the design work feel highly personalized and purposeful.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Creative Carousels & Testimonials -->
+  <div class="section">
+    <h2>4. Creative Carousels & Testimonials</h2>
+    <div class="media-block reverse">
+      <div class="media">
+        <img src="D:/New website content/kcara.png" alt="Creative Carousels Image" />
+      </div>
+      <div class="text-block">
+        <ul>
+          <li>Shared real client testimonials to build trust and showcase smooth design workflows.</li>
+          <li>Used visually rich layouts that matched the brand identity, making testimonials part of the design language.</li>
+          <li>Created informative carousels aimed at both potential clients and fellow designers looking for value-driven content.</li>
+          <li>Each carousel was intentionally crafted to be fun, interactive, and scroll-worthy—never just a plain slideshow.</li>
+          <li>Helped reinforce the designer’s credibility and knowledge, while keeping the feed visually cohesive and engaging.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visual Consistency & Content Planning -->
+  <div class="section">
+    <h2>5. Visual Consistency & Content Planning</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="D:/New website content/kvisual.png" alt="Visual Consistency Image" />
+      </div>
+      <div class="text-block">
+        <ul>
+          <li>The goal was to make sure every post on the feed looked clean, cohesive, and visually appealing — especially since it’s a design-led brand.</li>
+          <li>Even a single wedding logo was shared in a way that felt complete, with attention to both aesthetics and information.</li>
+          <li>Mock-ups were used intentionally, not just for the sake of presentation, but to keep the overall grid polished and consistent.</li>
+          <li>Content planning was done thoughtfully, keeping in mind what works best for her audience while aligning with the brand’s visual language.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="section">
+    <h2>6. Results</h2>
+    <div class="results">
+      <div class="result-item">
+        <h3>Boosted</h3>
+        <p>Brand Credibility and Professionalism</p>
+      </div>
+      <div class="result-item">
+        <h3>Significant</h3>
+        <p>Increase in Views on Reels and Carousels</p>
+      </div>
+      <div class="result-item">
+        <h3>Steady</h3>
+        <p>Growth in Followers and Community Strength</p>
+      </div>
+      <div class="result-item">
+        <h3>Improved</h3>
+        <p>Engagement Rates: Likes, Saves, Comments, Shares</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>

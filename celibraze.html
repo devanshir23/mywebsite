@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Celibraze | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .section.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section:nth-child(even) {
+      background-color: #141414;
+    }
+
+    .media-block {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .media-block.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .media {
+      width: 500px;
+      height: 300px;
+      background-color: #333;
+      border-radius: 12px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .text-block {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .result-item {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .result-item:hover {
+      transform: scale(1.05);
+    }
+
+    .result-item h3 {
+      font-size: 2rem;
+      color: #00ffd1;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .media {
+        width: 100%;
+        height: 200px;
+      }
+
+      .media-block {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Introduction -->
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="logo1.png" alt="Introduction">
+      </div>
+      <div class="text-block">
+        <p><strong>Celibraze</strong> — the masters of grand weddings.</p>
+        <p>Celibraze doesn’t just plan events—they create experiences that leave people speechless (and phones flooded with photos). From luxury decor to seamless execution, they’re the team behind some seriously stunning weddings.</p>
+        <p>When Celibraze came to me, they were clear: they didn’t want a basic online presence. They wanted to be seen. My goal? Help them boost brand awareness, craft a digital identity that feels as premium as their events, and showcase their work in a way that gets hearts tapping and heads turning.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Challenges -->
+  <div class="section">
+    <h2>2. Challenges</h2>
+    <div class="media-block reverse">
+      <div class="media">
+        <img src="file:///D:/New%20website%20content/challenges.png" alt="Challenges">
+      </div>
+      <div class="text-block">
+        <p>The challenges I walked into:</p>
+        <p>Celibraze had followers, sure—but barely any engagement. Comments were quiet, likes were low, and reviews? Mostly crickets.</p>
+        <p>The content was stuck in the long-form lane. Less reels, no snackable posts that held attention.</p>
+        <p>Their photo posts were kind of just… posted. No flow, no narrative, and definitely not strategic planning.</p>
+        <p>Overall, the page looked more like a gallery than a story—and that wasn’t doing justice to the magic they actually create offline.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Revamp -->
+  <div class="section">
+    <h2>3. Strategy: Content Revamp</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="file:///D:/New%20website%20content/grid3.png" alt="Content Revamp">
+      </div>
+      <div class="text-block">
+        <p>Content revamp, but make it artfully strategic. With Celibraze, every event deserved its own moment—and that’s exactly how I treated it.</p>
+        <p>For each celebration, I crafted a fresh theme—not just with colors, but with a core idea and a unique name. Think of it like launching a mini campaign for every wedding.</p>
+        <p>Posts weren’t just “pretty pictures.” Whether it was a carousel or a reel, every piece of content had a purpose, a story, and a reason to be there.</p>
+        <p>Since visual appeal is everything in this industry, I designed the grid to feel cohesive, intentional, and scroll-stopping.</p>
+        <p>The result? A feed that actually feels like Celibraze—elegant, emotional, and thoughtfully curated.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engagement Tactics -->
+  <div class="section">
+    <h2>4. Strategy: Engagement Tactics</h2>
+    <div class="media-block reverse">
+      <div class="media">
+        <img src="file:///D:/New%20website%20content/story2.png" alt="Engagement Tactics">
+      </div>
+      <div class="text-block">
+        <p>Stories with a purpose (and a plan).</p>
+        <p>I introduced a series called <strong>Event Insiders</strong>—crafted especially for people curious about event management and the planning world.</p>
+        <p>The goal was to share behind-the-scenes magic: the power of detailing, the art-meets-strategy nature of planning, and how creativity isn’t just about pretty things—it’s about intentionality.</p>
+        <p>Every story wasn’t just aesthetic—it carried purpose. We made sure the message was front and center, wrapped beautifully in visuals that matched the brand’s elegance.</p>
+        <p>The outcome? More views, more replies, more shares—and finally, stories that sparked real interest and interaction.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quality Content -->
+  <div class="section">
+    <h2>5. Strategy: Quality Content</h2>
+    <div class="media-block">
+      <div class="media">
+        <img src="file:///D:/New%20website%20content/views.png" alt="Quality Content">
+      </div>
+      <div class="text-block">
+        <p>When content clicks, it’s never by accident.</p>
+        <p>Not every post is meant to go viral—and I’m all about organic growth that builds trust over time. But every now and then, something lands just right.</p>
+        <p>One carousel in particular took off—not because we chased trends, but because the story was crystal clear. It showed the raw sketch of the event concept next to the final execution. That visual journey? People loved it.</p>
+        <p>The soundtrack? Not trending, but totally familiar. It matched the vibe, carried emotion, and added that extra “something” to the post.</p>
+        <p>And of course, the decor was a showstopper. It had the kind of visual appeal that made people pause, admire, and share.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="section">
+    <h2>6. Results</h2>
+    <div class="results">
+      <div class="result-item">
+        <h3>100k+</h3>
+        <p>Views on top-performing reel</p>
+      </div>
+      <div class="result-item">
+        <h3>60k+</h3>
+        <p>Accounts reached in 3 months</p>
+      </div>
+      <div class="result-item">
+        <h3>Massive</h3>
+        <p>Increase in follower growth</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
